@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+   
+    <!-- Sidebar -->
+   
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Контакти</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </aside>
+ 
+   <!--Header  -->
+
+<header>
+    <div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <!-- Logo -->
+    <div class="space close500">
+        <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+    </div>
+    <!-- Choose a city  -->
+    <div class="nowrap">
+        <div class="popup row" id="popup-1">
+            <img src="img/location.png" alt="location" class="location-img">
+            <button onclick="togglePopup()" class="regular">Оберіть місто</button>
+            <div class="overlay"></div>
+            <div class="content-location">
+                <div class="close-btn" onclick="togglePopup()">
+                    ×
+                </div>
+                <h1 class="regular">Оберіть місто</h1>
+                <div class="ul-location ">
+                    <ul>
+                        <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                        <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                        <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                    </ul><a href=""></a>
+                    <ul><a href=""></a>
+                        <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                        </li>
+                        <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                        <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Phone -->
+    <div class="div-number">
+        <div>
+            <p class="bold p-number close1000">Замовити таксі</p>
+        </div>
+        <div class="div-number2">
+            <img src="img/smartphone.png" alt="Phone" width="40px">
+            <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+        </div>
+    </div>
+</header>
+  <hr>
+
+   <!-- Main content -->
+   <div id="main">
+        
+   </div>
+
+   <!-- Footer -->
+<footer>
+    <div class="footer-m ">
+        <div>
+            <div class="footer-logo">
+                <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png"
+                        alt="Cherry" width="51px"></a>
+            </div>
+            <div class="google-play">
+                <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client"><img
+                        src="img/Google-Play-Logo.png" alt="Google play" width="120px"></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Контакти</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+            </div>
+            <hr class="footer">
+            <div class="footer-help">
+                <p style="color: white;">
+                    Служба підтримки
+                    <br>
+                    <span class="cherry-colore"><img src="img/email.png" alt="email" width="15px">
+                        support@cherry-taxi.ua</span>
+                </p>
+                <p style="color: white;">
+                    Загальні питання
+                    <br>
+                    <span class="cherry-colore"><img src="img/email.png" alt="email" width="15px">
+                        info@cherry-taxi.ua</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

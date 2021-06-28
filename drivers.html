@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<style>
+    li {
+   list-style-type: none;
+    padding: 0.5%;
+}
+
+li::before {
+  color: #d94040;
+  content: "●";
+  padding-right: 10px;
+}
+</style>
+<body>
+
+    <!-- Sidebar -->
+
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Послуги</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </aside>
+
+    <!--Header  -->
+
+    <header>
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- Logo -->
+        <div class="space close700">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <!-- Choose a city  -->
+        <div class="nowrap">
+            <div class="popup row" id="popup-1">
+                <img src="img/location.png" alt="location" class="location-img">
+                <button onclick="togglePopup()" class="regular">Оберіть місто</button>
+                <div class="overlay"></div>
+                <div class="content-location">
+                    <div class="close-btn" onclick="togglePopup()">
+                        ×
+                    </div>
+                    <h1 class="regular">Оберіть місто</h1>
+                    <div class="ul-location ">
+                        <ul>
+                            <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                            <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                            <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                        </ul><a href=""></a>
+                        <ul><a href=""></a>
+                            <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                            </li>
+                            <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                            <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="div-number">
+            <div>
+                <p class="bold p-number close1000">Замовити таксі</p>
+            </div>
+            <div class="div-number2">
+                <img src="img/smartphone.png" alt="Phone" width="40px">
+                <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main content -->
+    <div id="main">
+        <div class="main-driver">
+            <h2 style="padding: 1%; font-size: 23px; text-align: center;">Робота в службі таксі <span class="cherry-colore">Cherry</span></h2>
+            <div>
+                <p>Якщо ви маєте водійські права, маєте вільний час, потребуєте і бажаєте отримати постійну роботу – служба таксі <span class="cherry-colore regular">Cherry</span>
+                    стане
+                    чудовою можливістю для поповнення власного бюджету.</p>
+                <h3 style="padding: 1%;">Переваги роботи в таксі</h3>
+                <p>Робота водієм, яку пропонує наша компанія, є престижною і зручною.</p>
+                <ul>
+                    <li>Водії, які співпрацюють з нами, стабільно отримують грошову винагороду в розмірі 8-10% з одного замовлення і
+                        вибирають
+                        найбільш зручний графік роботи.</li>
+                    <li>Наші фахівці забезпечать професійну технічну підтримку водієві.</li>
+                    <li>Робота в таксі служби <span class="cherry-colore regular">Cherry</span> водієм передбачає відсутність штрафів, абонентської плати та вступних внесків.
+                    </li>
+                    <li>Майбутній водій таксі <span class="cherry-colore regular">Cherry</span> може мати власний автомобіль (по класу не нижче Daewoo Sens) або скористатися
+                        пропозиціями нашого автопарку.</li>
+                </ul>
+            </div>
+            <div class="blocks-dr-conteiner">
+                <div>
+                    <div class="blocks-dr blocks-dr1">
+                        <img src="img/block-dr1(1).png" alt="airplane" style="width: 90px;">
+                    </div>
+                    <p>8% від суми з <br> внутрішніх замовлень</p>
+                </div>
+                <div>
+                    <div class="blocks-dr blocks-dr2">
+                        <img src="img/block-dr2(2).png" alt="airplane" style="width: 90px;">
+                    </div>
+                    <p>10% від суми <br> з партнерських <br> замовлень</p>
+                </div>
+                <div>
+                    <div class="blocks-dr blocks-dr3">
+                        <img src="img/block-dr3(3).png" alt="airplane" style="width: 90px;">
+                    </div>
+                    <p>Якісний єфір</p>
+                </div>
+                <div>
+                    <div class="blocks-dr blocks-dr4">
+                        <img src="img/clock-cherry.png" alt="airplane" style="width: 90px;">
+                    </div>
+                    <p>Вільний графік</p>
+                </div>
+                <div>
+                    <div class="blocks-dr blocks-dr5">
+                        <img src="img/block-dr(4).png" alt="airplane" style="width: 90px;">
+                    </div>
+                    <p>Без вступних</p>
+                </div>
+            </div>
+            <div>
+                <h3 style="padding: 1%;">Як стати водієм в службі таксі <span class="cherry-colore regular">Cherry</span>?</h3>
+                <p>Водій таксі – робота, яка не випадково вважається вигідною і однією з найпопулярніших. Це відмінна можливість
+                заробітку, суміщати з іншими видами діяльності і дозволяє збільшити власний водійський досвід. Тому, якщо “водій таксі”
+                – ваш вибір, все що потрібно зробити, щоб отримати роботу в нашій службі – це заповнити анкету, розташовану у нашому
+                додатку із зазначенням мінімальних даних.</p>
+                <p>Інструкції та правила, програмне забезпечення для телефону, щоб почати роботу, а також відповіді на всі запитання ви,
+                зможете знайти на нашому сервісі або звернувшись особисто по телефону.</p>
+                <p>Ми раді поповнити нашу команду активними та цілеспрямованими співробітниками, зацікавленими в довгостроковому і плідному
+                співробітництві!</p>
+                <p>Служба таксі <span class="cherry-colore regular">Cherry</span> – швидкий номер, гідна робота!</p>
+            </div>  
+            <div class="how-to-dr">
+                <div class="column">
+                    <img src="img/clipboard.png" alt=" " style="width: 120px;">
+                    <p>Заповнення анкети</p>
+                </div>
+                <p>————</p>
+                <div>
+                        <img src="img/smartphone-cherry.png" alt="" style="width: 120px;">
+                    <p>Налаштування телефона</p>
+                </div>
+                <p>————</p>
+                <div>
+                    <img src="img/document.png" alt="" style="width: 120px;">
+                    <p>Отримання реквізитів</p>
+                </div>
+                <p>————</p>
+                <div>
+                    <img src="img/taxi.png" alt="" style="width: 120px;">
+                    <p>Початок роботи</p>
+                </div>
+            </div>
+            <h2 style="margin: 1%;" >Сервісні стандарти <span class="cherry-colore regular">Cherry</span> Taxi</h2>
+            <div id="text-slide" class="light" style="height: 500px;">
+                <p>Дані стандарти обслуговування клієнтів настійно рекомендовано всім таксистам <span class="cherry-colore regular">Cherry</span> Taxi та входять в курс навчання.</p>
+                <p>Дотримання цих стандартів дозволить вам підвищити свій рейтинг, отримувати від клієнтів чайові й не допустити зниження
+                персонального рейтингу водія і блокувань аккаунта.</p>
+                <h3 class="cherry-colore regular" style="margin: 1%;">1. Підготовка до поїздки</h3>
+                <ul>
+                    <li>Переконайтеся, що ваш автомобіль повністю справний.</li>
+                    <li>Перевірте рівень бензину: його повинно бути не менше третини бака.</li>
+                    <li>Переконайтеся в тому, що автомобіль чистий зовні й перевірте чистоту салону. Також перевірте, щоб в авто не було
+                    сторонніх речей (як в багажнику, так і в салоні).</li>
+                    <li>Скло, пороги та ручки повинні бути чистими.</li>
+                    <li>Повітря в салоні має бути свіжим. Неприємні запахи неприпустимі.</li>
+                    <li>Зовнішній вигляд водія повинен бути охайним і чистим.</li>
+                    <li>Машину подавати слід точно за вказаною адресою, беручи до уваги всі вибрані клієнтом опції і його побажання.</li>
+                    <li>Спізнюватися на замовлення не допускається. Якщо ви запізнилися, ви повинні вибачитися перед клієнтом від імені
+                    компанії.</li>
+                </ul>
+                <h3 class="cherry-colore regular" style="margin: 1%;">2. Посадка і висадка клієнтів</h3>
+                <p>Посадка і висадка з таксі завжди повинні здійснюватися в рамках чинних ПДР:</p>
+                <ul>
+                    <li>після повної зупинки транспортного засобу;</li>
+                    <li>при відсутності перешкод для виходу або входу (парканів, калюж тощо)</li>
+                    <li>водій зобов'язаний допомогти клієнту відкрити двері.</li>
+                    <li>передній ряд крісел зобов'язаний бути посунуть уперед на максимум, з кутом нахилу спинки сидіння, що не перевищує 90
+                    градусів.</li>
+                    <li>водій повинен допомогти клієнту при завантаженні, розміщенні в салоні машини й вивантаженні особистого багажу після
+                    прибуття.</li>
+                    <li>при обслуговуванні клієнтів похилого віку, дітей або інвалідів, воїн повинен допомогти їм при посадці та висадці.</li>
+                    <li>водій зобов'язаний дотримуватися стандартних правил провезення в салоні тварин і багажу.</li>
+                    <li>якщо клієнт хоче скористатися додатковими послугами, ви зобов'язані заздалегідь проінформувати про їх вартість і
+                    необхідність оплати.</li>
+                    <li>до висадки пасажира водій повинен запитати, де буде зручніше зупинитися.</li>
+                    <li>обов'язково перевіряйте салон на предмет забутих предметів. Якщо такі присутні, слід звернутися до диспетчера і віддати
+                    забув їх пасажиру.</li>
+                </ul>
+                <h3 class="cherry-colore regular" style="margin: 1%;">3. Безпека і комфортв</h3>
+                <ul>
+                    <li>Завжди дотримуйтесь правил дорожнього руху. Здійснюйте рух зі швидкістю потоку, не робіть різких маневрів.</li>
+                    <li>У салоні повинні бути створені комфортні умови, відповідно бажанням пасажира (температура, яка відіграє радіостанція,
+                    регулювання сидіння).</li>
+                    <li>Під час руху не розмовляйте по телефону.</li>
+                    <li>Якщо клієнт говорить по телефону, необхідно зменшити гучність музики.</li>
+                </ul>
+                <h3 class="cherry-colore regular" style="margin: 1%;">4. Оплата поїздки</h3>
+                <ul>
+                    <li>Якщо клієнт розплачується готівкою в темний час доби, для зручності включіть освітлення.</li>
+                    <li>При оплаті готівкою завжди давайте здачу в повному обсязі при оплаті купюрою будь-якої гідності.</li>
+                </ul>
+                <h3 class="cherry-colore regular" style="margin: 1%;">5. Ввічливість та уважність</h3>
+                <ul>
+                    <li>Завжди виглядайте охайно, поводьте себе спокійно і привітно, посміхайтеся, вітайте і прощайтеся з клієнтом, дякуйте за
+                    використання послуг <span class="cherry-colore regular">Cherry</span> Taxi.</li>
+                    <li>Завжди вчасно прибувайте на місце посадки.</li>
+                    <li>Здійснюйте дзвінки клієнту тільки в самому крайньому випадку (якщо він довго не виходить або ви не в змозі прибути
+                    вчасно).</li>
+                    <li>Після поїздки дзвонити клієнтові заборонено (виняток - якщо він забув в салоні особисті речі).</li>
+                    <li>Заздалегідь уточніть кінцеву точку і бажаний маршрут. Якщо побажання відсутні, вибирайте найбільш оптимальний варіант.</li>
+                    <li>Ніколи не просіть залишити позитивний відгук або чайові та не натякайте на це.</li>
+                    <li>Якщо пасажир сам не починає розмову, дотримуйтесь тишу.</li>
+                    <li>Спілкуйтеся в рамках ділового етикету і загальноприйнятих норм ввічливості. Також, слід уникати суперечок, дискусій,
+                    нав'язування власної думки, критики сервісу <span class="cherry-colore regular">Cherry</span> Taxi.</li>
+                </ul>
+                <h3 class="cherry-colore regular" style="margin: 1%;"   >Грубі порушення стандартів сервісу <span class="cherry-colore regular">Cherry</span> Taxi</h3>
+                <ul>
+                    <li>Демонстрування клієнту зброї, а також зберігання його на найближчому місці або в доступності клієнта (призводить до
+                    скарг пасажирів і створює загрозу їхній безпеці).</li>
+                    <li>Грубість, провокування конфліктів, насильницьке утримання в салоні, фізичний вплив, контакт з клієнтом після завершення
+                    замовлення (не тільки провокує взаємні претензії і погіршення настрою пасажира, а й часто спричиняє юридичну
+                    відповідальність).</li>
+                    <li>Присвоєння особистих речей пасажирів, забутих в салоні (є крадіжкою і підлягає кримінальному переслідуванню).</li>
+                    <li>Відсутність необхідних документів, використання прострочених або підроблених документів, робота під чужим обліковим
+                    записом <span class="cherry-colore regular">Cherry</span> Taxi (підлягає кримінальному переслідуванню і спричинить блокування облікового запису в сервісі).</li>
+                    <li>Фінансові афери та махінації по відношенню до клієнта (є шахрайством і тягне за собою кримінальну відповідальність).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-m ">
+            <div>
+                <div class="footer-logo">
+                    <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png"
+                            alt="Cherry" width="51px"></a>
+                </div>
+                <div class="google-play">
+                    <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client"><img
+                            src="img/Google-Play-Logo.png" alt="Google play" width="120px"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Послуги</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+                </div>
+                <hr class="footer">
+                <div class="footer-help">
+                    <p style="color: white;">
+                        Служба підтримки
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> support@cherry-taxi.ua
+                        </a>
+                    </p>
+                    <p style="color: white;">
+                        Загальні питання
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> info@cherry-taxi.ua
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

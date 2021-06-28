@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<style>
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+    li {
+   list-style-type: none;
+    padding: 0.5%;
+    }
+
+    li::before {
+      color: #d94040;
+      content: "●";
+      padding-right: 10px;
+    }
+</style>    
+<body>
+
+    <!-- Sidebar -->
+
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Послуги</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </aside>
+
+    <!--Header  -->
+
+    <header>
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- Logo -->
+        <div class="space close700">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <!-- Choose a city  -->
+        <div class="nowrap">
+            <div class="popup row" id="popup-1">
+                <img src="img/location.png" alt="location" class="location-img">
+                <button onclick="togglePopup()" class="regular">Оберіть місто</button>
+                <div class="overlay"></div>
+                <div class="content-location">
+                    <div class="close-btn" onclick="togglePopup()">
+                        ×
+                    </div>
+                    <h1 class="regular">Оберіть місто</h1>
+                    <div class="ul-location ">
+                        <ul>
+                            <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                            <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                            <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                        </ul><a href=""></a>
+                        <ul><a href=""></a>
+                            <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                            </li>
+                            <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                            <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="div-number">
+            <div>
+                <p class="bold p-number close1000">Замовити таксі</p>
+            </div>
+            <div class="div-number2">
+                <img src="img/smartphone.png" alt="Phone" width="40px">
+                <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main content -->
+    <div id="main">
+        <!-- Baner -->
+        <div class="close1120" id="none-scroll">
+            <section class="slider-pages">
+                <article class="js-scrolling__page js-scrolling__page-1 js-scrolling--active">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold cherry-colore">
+                                    Економ клас
+                                </p>
+                                <p class="slider-page__title cherry-colore">
+                                    Бюджетні або малогабаритні моделі авто, а також автомобілі вітчизняного виробника нового зразка, які відповідають всім
+                                    параметрам
+                                </p>
+                                <p class="slider-page__description light ">
+                                    прокрутіть вниз
+                                </p>
+                                <img src="img/down-arrow_cherry.png" alt="down" width="30vmax">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        
+                <article class="js-scrolling__page js-scrolling__page-2">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold">
+                                    Стандарт клас
+                                </p>
+                                <p class="slider-page__title">
+                                    Автомобілі середнього цінового сегмента для поїздок поодинці або для невеликих компаній
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        
+                <article class="js-scrolling__page js-scrolling__page-3">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold cherry-colore">
+                                    Комфорт клас
+                                </p>
+                                <p class="slider-page__title cherry-colore">
+                                    Комфортабельні автомобілі з просторим салоном, наявністю кондиціонера та рядом інших переваг
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="js-scrolling__page js-scrolling__page-4">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold">
+                                    Мінівен
+                                </p>
+                                <p class="slider-page__title">
+                                    Великогабаритні авто на компанію більше 4-х чоловік, з містким вантажним відсіком і просторим салоном
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="js-scrolling__page js-scrolling__page-5">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold cherry-colore">
+                                    Вантажне таксі
+                                </p>
+                                <p class="slider-page__title cherry-colore">
+                                    Малотоннажні авто з великим вантажним відсіком і наявністю 2х пасажирських місць
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="js-scrolling__page js-scrolling__page-6">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold">
+                                    Евакуатор
+                                </p>
+                                <p class="slider-page__title">
+                                    Спеціальний транспортний засіб, призначений для завантаження, розвантаження і перевезення автомобілів
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="js-scrolling__page js-scrolling__page-7">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold cherry-colore">
+                                    Тверезий водій
+                                </p>
+                                <p class="slider-page__title cherry-colore">
+                                    Водій доставить вас на вашому автомобілі за вказаною адресою
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="js-scrolling__page js-scrolling__page-8">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <p class="slider-page__title slider-page__title--big bold">
+                                    Кур'єр
+                                </p>
+                                <p class="slider-page__title">
+                                    Купівля необхідних вам товарів, і перевезення їх за вказаною адресою
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="js-scrolling__page js-scrolling__page-9">
+                    <div class="slider-page slider-page--left">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-page slider-page--right">
+                        <div class="slider-page--skew">
+                            <div class="slider-page__content">
+                                <img src="img/up-arrow_cherry.png" alt="down" width="30vmax">
+                                <p class="slider-page__description light ">
+                                    прокрутіть вверх
+                                </p>
+                                <p class="slider-page__title slider-page__title--big bold cherry-colore">
+                                    Доставка
+                                </p>
+                                <p class="slider-page__title cherry-colore">
+                                    Перевезення малогабаритної посилки, вагою до 20 кг
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <!-- Mobile version baner serv -->
+        <div class="content-serv-m-v">
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Економ клас</span>
+                </p>
+                <p>
+                    Бюджетні або малогабаритні моделі авто, а також автомобілі вітчизняного виробника нового зразка, які відповідають
+                    всім
+                    параметрам
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Стандарт клас</span>
+                </p>
+                <p>
+                    Автомобілі середнього цінового сегмента для поїздок поодинці або для невеликих компаній
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Комфорт клас</span>
+                </p>
+                <p>
+                    Комфортабельні автомобілі з просторим салоном, наявністю кондиціонера та рядом інших переваг
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Мінівен</span>
+                </p>
+                <p>
+                    Великогабаритні авто на компанію більше 4-х чоловік, з містким вантажним відсіком і просторим салоном
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Вантажне таксі</span>
+                </p>
+                <p>
+                    Малотоннажні авто з великим вантажним відсіком і наявністю 2х пасажирських місць
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Евакуатор</span>
+                </p>
+                <p>
+                    Спеціальний транспортний засіб, призначений для завантаження, розвантаження і перевезення автомобілів
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Тверезий водій</span>
+                </p>
+                <p>
+                    Водій доставить вас на вашому автомобілі за вказаною адресою
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Кур'єр</span>
+                </p>
+                <p>
+                    Купівля необхідних вам товарів, і перевезення їх за вказаною адресою
+                </p>
+            </div>
+            <div class="content-serv-m-v-block">
+                <p>
+                    <span class="cherry-colore bold" style="font-size: 25px;">Доставка</span>
+                </p>
+                <p>
+                    Перевезення малогабаритної посилки, вагою до 20 кг
+                </p>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="main-content-serv">
+            <h2>Тарифи таксі <span class="cherry-colore">Cherry</span></h2>
+            <div class="light">
+                <p>Замовити недороге таксі у Львові ви зможете у службі таксі <span class="cherry-colore regular">Cherry</span> онлайн у <a href="customers.html" class="regular hover-r_b"><span>мобільному додатку</span></a> чи за телефоном <a href="tel:333" class="regular a hover-r_b"><span>333</span></a>.</p>
+                <p>Оскільки наша компанія планує розширення своєї діяльності в
+                подальшому, ми уважно ставимося до фінансовій стороні питання.</p>
+                <p>Кредо служби таксі <span class="cherry-colore regular">Cherry</span> – тарифи таксі повинні бути
+                доступними.</p>
+                <p>Недорого, в нашому розумінні, значить вигідна вартість поїздки на будь-які відстані, зберігаючи при цьому
+                якість надаваних послуг на високому рівні.</p>
+                <h3>Дешеве таксі <span class="cherry-colore">Cherry</span></h3>
+                <p>Служба таксі <span class="cherry-colore regular">Cherry</span> пропонує замовити таксі дійсно недорого, але при цьому, ми справно виконуємо головні принципи роботи:</p>
+                <ul>
+                    <li>Пунктуальність. «Дешево» не означає погано! Ми довели це, надаючи транспорт в найкоротші терміни, при цьому гарантуючи
+                    демократичність ціни.</li>
+                    <li>Великий вибір автомобілів. В автопарку є машини <a href="services.html" class="regular hover-r_b"><span>різного класу</span></a>, що дозволяє нам «підлаштуватися» під замовника в
+                    будь-якій ситуації.</li>
+                    <li>Відкритість. Ми не приховуємо вартість наданих послуг – всі тарифи доступні для наших клієнтів.</li>
+                </ul>
+                <p>Систематизація та швидке реагування на запити клієнтів ідеально поєднуються з цінами. На доказ того розвиток надаваних
+                послуг і величезна кількість вдячних та постійних клієнтів у всіх містах України, де є наші представництва.</p>
+                <p class="cherry-colore regular">Наші тарифи Вас приємно здивують!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-m ">
+            <div>
+                <div class="footer-logo">
+                    <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png"
+                            alt="Cherry" width="51px"></a>
+                </div>
+                <div class="google-play">
+                    <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client">
+                        <img src="img/Google-Play-Logo.png" alt="Google play" width="120px">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Послуги</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+                </div>
+                <hr class="footer">
+                <div class="footer-help">
+                    <p style="color: white;">
+                        Служба підтримки
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> support@cherry-taxi.ua
+                        </a>
+                    </p>
+                    <p style="color: white;">
+                        Загальні питання
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> info@cherry-taxi.ua
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

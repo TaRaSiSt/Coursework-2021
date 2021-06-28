@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Контакти</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </aside>
+
+    <!--Header  -->
+
+    <header>
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- Logo -->
+        <div class="space close500">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <!-- Choose a city  -->
+        <div class="nowrap">
+            <div class="popup row" id="popup-1">
+                <img src="img/location.png" alt="location" class="location-img">
+                <button onclick="togglePopup()" class="regular">Дніпро</button>
+                <div class="overlay"></div>
+                <div class="content-location">
+                    <div class="close-btn" onclick="togglePopup()">
+                        ×
+                    </div>
+                    <h1 class="regular">Оберіть місто</h1>
+                    <div class="ul-location ">
+                        <ul>
+                            <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                            <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                            <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                        </ul><a href=""></a>
+                        <ul><a href=""></a>
+                            <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                            </li>
+                            <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                            <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="div-number">
+            <div>
+                <p class="bold p-number close1000">Замовити таксі</p>
+            </div>
+            <div class="div-number2">
+                <img src="img/smartphone.png" alt="Phone" width="40px">
+                <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main content -->
+    <div id="main">
+        <div class="city">
+            <div style="display: flex; justify-content: center; margin-top: 5%;">
+                <p style="font-size: 2vmax; margin-bottom: 5%;">Замовити таксі у Дніпро</p>
+            </div>
+            <h2 style="padding: 1%; font-size: 23px; text-align: center;">Безкоштовний додаток <span
+                    class="cherry-colore bold">Cherry</span> - швидше та дешевше, ніж дзвонити оператору таксі</h2>
+            <div class="mobile-app">
+                <div class="column mobile-app-blocks">
+                    <div style="text-align: center;">
+                        <img src="img/calendar.png" style="width: 4vmax;" alt="">
+                        <br>
+                        <span class="bold cherry-colore" style="font-size: 2vmax;">622</span>
+                        <br>
+                        <span class="cherry-colore">днів роботи</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="img/customer.png" style="width: 4vmax;" alt="">
+                        <br>
+                        <span class="bold cherry-colore" style="font-size: 2vmax;">431.627</span>
+                        <br>
+                        <span class="cherry-colore">клієнтів</span>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client">
+                        <img src="img/mainapp.png" alt="app" style="width: 23vmax;">
+                    </a>
+                </div>
+                <div class="column mobile-app-blocks">
+                    <div style="text-align: center;">
+                        <img src="img/rate.png" style="width: 4vmax;" alt="">
+                        <br>
+                        <span class="bold cherry-colore" style="font-size: 2vmax;">1.734.957</span>
+                        <br>
+                        <span class="cherry-colore">успішних поїздок</span>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="img/driver.png" style="width: 4vmax;" alt="">
+                        <br>
+                        <span class="bold cherry-colore" style="font-size: 2vmax;">8.381</span>
+                        <br>
+                        <span class="cherry-colore">водіїв</span>
+                    </div>
+                </div>
+            </div>
+            <div class="table-city">
+                <table>
+                    <tr>
+                        <td>Наші номери телефонів</td>
+                        <td>3000</td>
+                    </tr>
+                    <tr>
+                        <td>Форма оплати</td>
+                        <td>Готівка, карта, <span class="cherry-colore">Cherry</span> бонуси</td>
+                    </tr>
+                    <tr>
+                        <td>Подача автомобіля</td>
+                        <td>протягом 5 хвилин</td>
+                    </tr>
+                    <tr>
+                        <td>Мінімальне замовлення таксі</td>
+                        <td>33 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Ціна по місту (км/грн)</td>
+                        <td>7 грн/км</td>
+                    </tr>
+                    <tr>
+                        <td>Ціна за містом (км/грн)</td>
+                        <td>9 грн/км</td>
+                    </tr>
+                    <tr>
+                        <td>Вартість очікування таксі</td>
+                        <td>1,5 грн/хв</td>
+                    </tr>
+                    <tr style="align-items:center">
+                        <td>Наші послуги</td>
+                        <td>Економ <br>
+                            Стандарт <br>
+                            Комфорт <br>
+                            Мінівен <br>
+                            Вантажний <br>
+                            Евакуатор <br>
+                            Тверезий водій <br>
+                            Кур'єр <br>
+                            Доставка <br>
+                            Мото доставка <br>
+                            Піша доставка <br>
+                            Своя ціна <br>
+                            Бізнес <br>
+                            Універсал <br>
+                            Дитячий <br>
+                            Улюбленець <br>
+                            Мікроавтобус</td>
+                    </tr>
+                    <tr style="align-items:center">
+                        <td>Наш автопарк</td>
+                        <td style="">
+                            Стандарт: Skoda Octavia, Hyundai Elantra, Volkswagen Passat <br>
+                            Економ: Daewoo Lanos, Opel Omega, Chevrolet Aveo <br>
+                            Комфорт: Toyota Camry, Kia Optima, Mercedes E <br>
+                            Універсал: Opel Combo, Fiat Doblo, Renault Kangoo <br>
+                            Дитячий: Mitsubishi Lancer, Kia Cerato, Hyundai Accent <br>
+                            Улюбленець: Chevrolet Lacetti, Renault Logan, Ford Escort <br>
+                            Евакуатор: ГАЗ-33106, Hyundai HD-78, Fuso FE85DJ <br>
+                            Вантажні: Renault Master, Ford Transit, Volkswagen LT <br>
+                            Мікроавтобус: Mercedes Sprinter, Toyota Haise, Peugeot Boxer</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="table-city">
+                <table>
+                    <tr>
+                        <th>Напрямки які мають попит</th>
+                        <th>Вартість</th>
+                    </tr>
+                    <tr>
+                        <td>Автовокзал центральний, Курчатова вул., 10 — вул. Дія Максима (Шелгунова), 11</td>
+                        <td>81 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Сільпо / пл Вокзальна, пл Вокзальна, 13 — 1 лікарня міська, Короленка вул., 12</td>
+                        <td>52 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Річковий вокзал, Десантників пл., 1 — АТБ на Кірова 129-Б, Кірова просп., 129-Б</td>
+                        <td>85 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Макдональдс на Гагаріна, Гагаріна просп., 128 — 4 Легенди готель, Байкова вул., 7</td>
+                        <td>83 грн</td>
+                    </tr>
+                    <tr>
+                        <td>метро Металургів, Калініна просп., 73 — Динамо готель, Щорса вул. (Кіровський), 8</td>
+                        <td>64 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Парк Готель готель, Ворошилова вул., 21-Д — Батьківщина кінотеатр, Столярова вул., 1</td>
+                        <td>59 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Асторія готель, Карла Маркса просп., 66 — Салют кінотеатр, Набережна Перемоги вул., 128</td>
+                        <td>93 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Європа ТЦ на Кірова, Кірова просп., 90 — Цунамі готель-спа, Жовтнева пл. (Соборна пл.), 12</td>
+                        <td>46 грн</td>
+                    </tr>
+                    <tr>
+                        <td>1 лікарня дитяча, Воронцова просп., 29 — Ринок Воронцовський, Газети Правда просп., 1А</td>
+                        <td>45 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Залізничний вокзал Центральний головний, Петровського пл., 11 — Річковий вокзал, Десантників пл., 1</td>
+                        <td>42 грн</td>
+                    </tr>
+                    <tr>
+                        <td>Супутник кінотеатр, Титова вул., 18 — Бартоломео готель, Набережна Перемоги вул., 9-Б</td>
+                        <td>98 грн</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="text-slide" class="content-city">
+                <p>Замовити таксі в Дніпрі (Дніпропетровську) легко: в нашому з вами місті працюють десятки компаній, готових надати
+                    будь-якому охочому свої послуги.Однак якщо вам хочеться проїхатися недорого - і при цьому щоб рівень
+                    обслуговування був
+                    дійсно високий - доведеться ретельно вибирати, кому довіритися. Адже у одних тарифи настільки великі, що
+                    змушують
+                    замислитися, звідки взагалі взялася така непомірна вартість. До іншим же просто не хочеться звертатися вдруге:
+                    ціна,
+                    звичайно, прийнятна, але от сервіс…</p>
+                <p>До того ж, для того щоб викликати авто (особливо якщо їхати потрібно терміново), доводиться гарячково шукати
+                    потрібний
+                    номер в мобільному телефоні, телефонувати, а потім ще довго пояснювати недбайливому диспетчеру, куди саме
+                    потрібно
+                    подати машину. Це не тільки дратує, але й змушує витрачати ваш дорогоцінний час.</p>
+                <p>На щастя, в Дніпропетровську з'явилося по-справжньому ідеальне в усіх відношеннях таксі!</p>
+                <h3 style="margin: 1% 0;" class="cherry-colore">Чому замовлення таксі в <span class="cherry-colore">Cherry</span> зручніше і вигідніше?</h3>
+                <p>Почати хоча б з того, що ця служба зробила виклик авто максимально швидким і зручним. Як? Дуже просто.</p>
+                <p>Ми повністю відмовилися від послуг диспетчерів. Все, що потрібно - ваш мобільний телефон і встановлене на ньому
+                    безкоштовна фірмовий додаток.</p>
+                <p>Досить включити його - і воно саме визначить ваше місце розташування. Залишиться лише ввести адресу місця
+                    призначення
+                    (або зазначити його на карті) - і система розрахує маршрут, показавши його на карті.</p>
+                <p>І можете починати готуватися до виходу, адже завдяки унікальній системі розподілу замовлень, до вас вже рухається
+                    найближчим від вас авто, повністю підходить під ваш запит.</p>
+                <p>Що значить «цілком слушне»? Справа в тому, що завдяки нашому великому автопарку, кожен клієнт може підібрати
+                    дійсно
+                    ідеально відповідає її потребам машину: від недорогого економ-авто до комфортних красенів преміум-класу або
+                    навіть
+                    мікроавтобусів. При цьому тарифи на наші послуги в будь-якому випадку порадують мешканців Дніпра.</p>
+                <p>Більш того: в додатку ви можете вибрати додаткові опції, такі як наявність спеціального дитячого крісла, місця
+                    для
+                    багажу, можливості покурити в дорозі або провезення домашніх тварин.</p>
+                <p>При цьому ви повністю контролюєте вартість поїздки. Адже ціна послужливо висвічується внизу екрану.</p>
+                <p>І - найприємніше: наш сервіс працює 24 години на добу, без вихідних і свят. Тому навіть якщо машина знадобиться
+                    пізно
+                    вночі, сміливо покладайтеся на нас!</p>
+                <h3 style="margin: 1% 0;" class="cherry-colore">А чи можу я викликати таксі онлайн?</h3>
+                <p>Зрозуміло. Завдяки сайту <span class="cherry-colore">Cherry</span> ви не тільки можете ознайомитися з нашими тарифами і перевагами нашої компанії.
+                    Для тих,
+                    кому незручно користуватися смартфоном, ми зробили спеціальну онлайн-форму, за функціоналом і зручності не
+                    поступається
+                    нашому фірмовому додатком. З її допомогою ви можете викликати таксі в кілька кліків.</p>
+                <p>Тому якщо вам необхідний дійсно високоякісний сервіс в Дніпрі - зі швидкою подачею машини, ввічливими і
+                    професійними
+                    водіями і максимально доступними цінами - ласкаво просимо в <span class="cherry-colore">Cherry</span>!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-m ">
+            <div>
+                <div class="footer-logo">
+                    <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png"
+                            alt="Cherry" width="51px"></a>
+                </div>
+                <div class="google-play">
+                    <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client"><img
+                            src="img/Google-Play-Logo.png" alt="Google play" width="120px"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Контакти</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+                </div>
+                <hr class="footer">
+                <div class="footer-help">
+                    <p style="color: white;">
+                        Служба підтримки
+                        <br>
+                        <span class="cherry-colore"><img src="img/email.png" alt="email" width="15px">
+                            support@cherry-taxi.ua</span>
+                    </p>
+                    <p style="color: white;">
+                        Загальні питання
+                        <br>
+                        <span class="cherry-colore"><img src="img/email.png" alt="email" width="15px">
+                            info@cherry-taxi.ua</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

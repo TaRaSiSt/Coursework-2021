@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Послуги</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </aside>
+
+    <!--Header  -->
+
+    <header>
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- Logo -->
+        <div class="space close700">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <!-- Choose a city  -->
+        <div class="nowrap">
+            <div class="popup row" id="popup-1">
+                <img src="img/location.png" alt="location" class="location-img">
+                <button onclick="togglePopup()" class="regular">Оберіть місто</button>
+                <div class="overlay"></div>
+                <div class="content-location">
+                    <div class="close-btn" onclick="togglePopup()">
+                        ×
+                    </div>
+                    <h1 class="regular">Оберіть місто</h1>
+                    <div class="ul-location ">
+                        <ul>
+                            <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                            <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                            <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                        </ul><a href=""></a>
+                        <ul><a href=""></a>
+                            <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                            </li>
+                            <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                            <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="div-number">
+            <div>
+                <p class="bold p-number close1000">Замовити таксі</p>
+            </div>
+            <div class="div-number2">
+                <img src="img/smartphone.png" alt="Phone" width="40px">
+                <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main content -->
+    <div id="main">
+        <div style="justify-content: center; display: flex; margin: 1% 0 0 0;">
+            <img src="img/Call-center.png" alt="" style="width: 40vmax;">
+        </div>
+        <hr>
+        <div style="display: flex; justify-content: center; margin-top: 5%;">
+            <p style="font-size: 2vmax; margin-bottom: 5%;">Відповіді на найчастіші запитання</p>
+        </div>
+        <!-- FAQ -->
+        <div class="accordion-main">
+            <div class="accordion v1">
+                <div class="a-container">
+                    <p class="a-btn bold">Загальні питання <span></span></p>
+                    <div class="a-panel">
+                        <p class="cherry-colore">У чому відмінність <span class="cherry-colore regular">Cherry</span> Таксі від інших служб таксі?</p>
+                        <br>
+                        <p class="light">Ми працюємо без диспетчерів. Кожне замовлення надходить безпосередньо водієві - тому машини у нас подаються настільки
+                        швидко.</p>
+                        <br><br>
+                        <p class="cherry-colore">Які умови використання сервісу?</p>
+                        <br>
+                        <p class="light">Дізнатися всі подробиці і прочитати угоду користувача ви можете при першому запуску додатку або зайшовши у розділ <a href="faq.html" class="cherry-colore">"FAQ"</a>
+                        нашого сайту.</p>
+                        <br><br>
+                        <p class="cherry-colore">Як з вами зв'язатися?</p>
+                        <br>
+                        <p class="light">Залишити відгук ви можете написавши нам на email.</p>
+                    </div>
+                </div>
+                <div class="a-container">
+                    <p class="a-btn bold">Допомога водіям <span></span></p>
+                    <div class="a-panel">
+                        <p class="cherry-colore">Скільки коштує подача машини, 1 км проїзду по місту і міжмісто?</p>
+                        <br>
+                        <p class="light">У розділі <a href="services.html">"Послуги"</a> ви можете детально ознайомитись з усіма актуальними розцінками на послуги таксі у вашому місті.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Як відбувається зняття абонплати і відсотка від виконаного замовлення?</p>
+                        <br>
+                        <p class="light">Зняття абонентської плати відбувається один раз на добу, в 6:00 за Києвом. Абонплата знімається за попередню добу і за
+                        умови, що ви виконали хоча б одне замовлення. Відсоток від виконаного замовлення знімається після його завершення.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Як можна відмовитися від замовлення у разі, якщо не підходять умови його виконання або замовлення було прийняте
+                        помилково? Як зробити це, не втративши рейтинг?</p>
+                        <br>
+                        <p class="light">Ви можете скористатися кнопкою "Зняти замовлення".</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Як розраховується очікування і зміни маршруту?</p>
+                        <br>
+                        <p class="light">Одна хвилина очікування оцінюється у 1,5 гривні. Внести зміни у замовлення водій має можливість самостійно.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Що робити, якщо програма неправильно розраховує кілометраж і тариф?</p>
+                        <br>
+                        <p class="light">Необхідно зателефонувати до відділу техпідтримки і повідомити про наявну проблему, назвати початковий і кінцевий пункт,
+                        а також вірну відстань.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Не завжди приходить сповіщення людям про те що машина на місці.</p>
+                        <br>
+                        <p class="light">Якщо ви не впевнені, що клієнту прийшло сповіщення про те, що ви на місці, ви можете зателефонувати клієнтові самостійно
+                        або натиснути кнопку "Нагадати клієнту" - або ж зателефонувати диспетчеру і запитати, чи показує система, що ви на
+                        місці. В найближчому майбутньому вийде оновлення програми для водіїв, і ви зможете бачити необхідну інформацію
+                        самостійно.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Як можна збільшити шрифт?</p>
+                        <br>
+                        <p class="light">Збільшити шрифт можна у налаштуваннях додатку.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Режими "день/ніч".</p>
+                        <br>
+                        <p class="light">Функція додана.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Поворот екрану.</p>
+                        <br>
+                        <p class="light">На даний момент ця функція працює на більшості планшетів. Якщо на вашому пристрої поворот екрану не здійснюється,
+                        переконливо просимо повідомити про це у техпідтримку.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​При реєстрації «викидає» з програми і пише "Помилка програми".</p>
+                        <br>
+                        <p class="light">На даний момент ця несправність усунена при роботі на більшості пристроїв. Якщо на вашому пристрої ця проблема
+                        зберігається, прохання повідомити про це у техпідтримку.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​При завантаженні фото видає помилку "На жаль, додаток зупинився".</p>
+                        <br>
+                        <p class="light">Спробуйте заново пройти реєстрацію, але завантажити фото з меншим дозволом. Якщо проблема зберігається, прохання
+                        повідомити про це у техпідтримку і повідомити марку і модель телефону.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Не надходить повідомлення про замовлення.</p>
+                        <br>
+                        <p class="light">Необхідно перевірити всі налаштування програми (розділ "Замовлення"). Можливо, ви встановили налаштування фільтрів
+                        замовлень некоректно.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Після виходу з додатку, воно все одно продовжує працювати і надсилати замовлення.</p>
+                        <br>
+                        <p class="light">На даний момент помилка усунена.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Як можна відмовитися від замовлення у разі, якщо не підходять умови його виконання або
+                            замовлення було прийняте
+                            помилково? Як зробити це, не втративши рейтинг?</p>
+                        <br>
+                        <p class="light">Ви можете скористатися кнопкою "Зняти замовлення".</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Для чого потрібен рейтинг?</p>
+                        <br>
+                        <p class="light">Рейтинг водія бачить клієнт, який замовляє машину через додаток. Клієнт завжди вибере того водія, рейтинг якого вище,
+                        адже це - показник надійності автомобіля і хорошої роботи водія. Надалі водії з більш високим рейтингом будуть
+                        оплачувати нижчу комісію за замовлення, а також отримувати різні заохочення від таксі <span class="cherry-colore regular">Cherry</span>.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Як почати працювати з Таксі Чері?</p>
+                        <br>
+                        <p class="light">Все до межі просто. Досить встановити спеціальний додаток, посилання на яке є на головній сторінці, пройти реєстрацію і
+                        отримати схвалення облікового запису. Після цього ви відразу можете приступати до виконання замовлень.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​Як знімається абонентська плата за використання системи?</p>
+                        <br>
+                        <p class="light">Абонентська плата знімається у фіксованому розмірі, щодоби. Гроші не знімаються, якщо за минулу добу ви не виконали
+                        жодного замовлення.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​​Чому не приходить повідомлення, що клієнт скасував замовлення?</p>
+                        <br>
+                        <p class="light">Приходить повідомлення завжди, можливо пропав інтернет або завис телефон. Якщо ви виявили збій, напишіть вашу
+                        марку / модель телефону, номер у розділ "Допомога".</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Що потрібно натиснути, щоб не приходили замовлення з інших районів?</p>
+                        <br>
+                        <p class="light">У розділі "Особистий кабінет", вибрати "Замовлення" і "Радіус пошуку", і виставити необхідний кілометраж пошуку
+                        замовлень.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">При реєстрації проходить більше 12 годин, а смс з позивним не було. В чому причина?</p>
+                        <br>
+                        <p class="light">Push-повідомлення, про те, що ви були активовані приходить на протязі 24 годин, після вашої реєстрації. Побачити який
+                        вам присвоїли позивний можна в розділі Кабінет.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​​У програмі не працює кнопка дії, що робити?</p>
+                        <br>
+                        <p class="light">Кнопка "Дія" не працює тільки в тому випадку, якщо замовлення водій не встиг підтвердити</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Чому <span class="cherry-colore regular">Cherry</span> тягне більше інтернет метрів ніж інші програми?</p>
+                        <br>
+                        <p class="light">Додаток Shark більш вдосконалене і багатофункціональна програма, відповідно споживає більше інтренет метрів і батареї.
+                        Команда <span class="cherry-colore regular">Cherry</span> на даний момент займається оптимізацією додатки, щоб усунути цю проблему і найближчим часом буде
+                        оновлення, після чого ця проблема повинна піти.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​​У фоновому режимі (наприклад, згорнути прогу і зателефонувати Клієнту) програма закривається. Як виправити?</p>
+                        <br>
+                        <p class="light">Якщо програму згортати вона не закривається, значить її закрили, а не згорнули. Може ще бути що телефон не вистачає
+                        оперативної пам'яті і тому телефон примусово закриває або блокує додаток.</p>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="a-container">
+                    <p class="a-btn bold">Допомога клієнтам <span></span></p>
+                    <div class="a-panel">
+                        <p class="cherry-colore">​​​Як мені замовити Таксі Чері?</p>
+                        <br>
+                        <p class="light">Досить запустити на вашому телефоні наше клієнтську програму, ввести точку призначення і при необхідності вибрати
+                        додаткові опції. Ось і все: скоро ваше авто прибуде!</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​​​​Як ввести адресу для подачі таксі?</p>
+                        <br>
+                        <p class="light">При запуску програма автоматично встановлює ваше місце розташування. Якщо вам потрібно поміняти місце подачі таксі, ви
+                        можете ввести адресу у текстовому полі у верхній частині екрану. Просто наберіть назву вулиці і номер будинку, а потім
+                        натисніть кнопку "ОК" для завершення.</p>
+                        <br><br>
+
+                        <p class="cherry-colore">​Чи можу я вказати точку подачі авто прямо на карті?</p>
+                        <br>
+                        <p class="light">Зрозуміло: для цього досить натиснути іконку зліва від поля для введення адреси. Після цього досить вказати потрібну
+                        точку шляхом перетягування карти - і натиснути кнопку ще раз для підтвердження.</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ ++ -->
+        <div>
+            <div style="display: flex; justify-content: center; margin-top: 5%;">
+                <p style="font-size: 2vmax; margin-bottom: 5%;">Корисні документи</p>
+            </div>
+            <div class="documents-blocks">
+                <a href="agreement.html" class="cherry-colore hover-r_b">
+                    <div style="text-align: center;">
+                        <img src="img/file-customer.png" alt="" style="width: 5vmax;">
+                        <p>Угода користувача <br> для клієнтів</p>
+                    </div>
+                </a>
+                <a href="instruction.html" class="cherry-colore hover-r_b">
+                    <div style="text-align: center;">
+                        <img src="img/file-app.png" alt="" style="width: 5vmax;">
+                        <p>Інструкція для роботи з <br> додатком для водіїв</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-m ">
+            <div>
+                <div class="footer-logo">
+                    <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png"
+                            alt="Cherry" width="51px"></a>
+                </div>
+                <div class="google-play">
+                    <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client"><img
+                            src="img/Google-Play-Logo.png" alt="Google play" width="120px"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Послуги</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+                </div>
+                <hr class="footer">
+                <div class="footer-help">
+                    <p style="color: white;">
+                        Служба підтримки
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> support@cherry-taxi.ua
+                        </a>
+                    </p>
+                    <p style="color: white;">
+                        Загальні питання
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> info@cherry-taxi.ua
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

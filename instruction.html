@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Контакти</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </aside>
+
+    <!--Header  -->
+
+    <header>
+        <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <!-- Logo -->
+        <div class="space close500">
+            <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <!-- Choose a city  -->
+        <div class="nowrap">
+            <div class="popup row" id="popup-1">
+                <img src="img/location.png" alt="location" class="location-img">
+                <button onclick="togglePopup()" class="regular">Оберіть місто</button>
+                <div class="overlay"></div>
+                <div class="content-location">
+                    <div class="close-btn" onclick="togglePopup()">
+                        ×
+                    </div>
+                    <h1 class="regular">Оберіть місто</h1>
+                    <div class="ul-location ">
+                        <ul>
+                            <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                            <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                            <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                        </ul><a href=""></a>
+                        <ul><a href=""></a>
+                            <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                            </li>
+                            <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                            <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="div-number">
+            <div>
+                <p class="bold p-number close1000">Замовити таксі</p>
+            </div>
+            <div class="div-number2">
+                <img src="img/smartphone.png" alt="Phone" width="40px">
+                <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main content -->
+    <div id="main">
+        <div class="document-title">
+            <h1>Інструкція для роботи з додатком для водіїв</h1>
+        </div>
+        <div class="document-content">
+            <h3 class="cherry-colore" style="margin: 2% 0 1% 0;">ІНСТРУКЦІЯ (РОЗ'ЯСНЕННЯ) ЩОДО ВИКОРИСТАННЯ ВОДІЯМИ МОБІЛЬНОГО ДОДАТКУ CHERRY TAXI</h3>
+            <p class="light">Ця інструкція є доповненням до УМОВ ВИКОРИСТАННЯ <span class="cherry-colore regular">Cherry</span> TAXI та покликана допомогти водіям ознайомитися з функціями
+            інтерфейсу Мобільного додатку. Приписи та положення УМОВ ВИКОРИСТАННЯ є обов'язковими для всіх користувачів Мобільного
+            додатку. Ви можете ознайомитися з актуальною редакцією УМОВ ВИКОРИСТАННЯ на сайті <span class="cherry-colore regular">Cherry</span> Taxi та/або через Мобільний
+            додаток. На відміну від положень і приписів УМОВ ВИКОРИСТАННЯ і ПОЛІТИКИ КОНФІДЕНЦІЙНОСТІ <span class="cherry-colore regular">Cherry</span> Taxi, ця Інструкція
+            носить роз'яснювальний характер.</p>
+            <p class="light">Якщо Ви використовуєте Мобільний додаток в статусі Користувача категорії «Водій» (Постачальник), прийміть до відома
+            нижчевикладені роз'яснення:</p>
+            <p class="light">1. На екрані Ви бачите список доступних замовлень, які ще не забрав (не прийняв) жоден з водіїв. Всі замовлення за
+            замовчуванням показані у радіусі 20 км від Вашого поточного місцезнаходження. Ви можете змінити це налаштування у
+            розділі «Кабінет» підрозділ «Замовлення».</p>
+            <p class="light">2. Всі замовлення в списку відображені в порядку віддаленості від вас: найближчий зверху, найдальший - внизу списку.</p>
+            <p class="light">3. У списку замовлень в стислому вигляді зазначені час і граничні точки маршруту. Разом з тим, зупинок може бути більше.
+            Також, клієнт може залишити важливі побажання щодо замовлення. Рекомендуємо не поспішати приймати замовлення і звернути
+            увагу на текст побажання клієнта, якщо такий є (він завжди червоного кольору, розташовується під відправною точкою «А»).</p>
+            <p class="light">4. Для прийняття замовлення досить натиснути відповідну кнопку і після цього підтвердити Вашу дію.</p>
+            <p class="light">5. Примусово перезавантажити список замовлень, можна потягнувши пальцем за список до низу.</p>
+            <p class="light">6. Кнопка «Вільний / Зайнятий» дає можливість, якщо Ви тимчасово зайняті, не виходячи з програми зупинити потік вхідних
+            замовлень. Ви одноразово натискаєте на кнопку «Вільний», вона змінює колір на червоний і статус на «Зайнятий».
+            Відповідно, коли Ви звільняєтесь, Ви натискаєте на кнопку повторно (бачите, що статус змінився на «Вільний») і Вам знову
+            приходять замовлення.</p>
+            <p class="light">7. Три крапки в правому верхньому кутку: кнопка для виклику спливаючого меню, для переходу в інші розділи програми.
+            Також Ви можете перейти в інші розділи за допомогою «свайпа екрану» пальцем справа наліво.</p>
+            <p class="light">8. Трохи нижче наводиться інформація про кількість замовлень по місту: скільки вільних і скільки всього. Праворуч
+            знаходиться піктограма водія з цифрою поруч, яка відображає кількість водіїв, які перебувають в роботі на даний момент.</p>
+            <p class="light">9. Коротка інформація щодо вільного замовлення включає:</p>
+            <p class="light">- відстань від Вас до клієнта;</p>
+            <p class="light">- час, на який слід подати автомобіль;</p>
+            <p class="light">- тривалість маршруту від місця подачі до місця призначення;</p>
+            <p class="light">- вартість поїздки.</p>
+
+            <h3 class="cherry-colore" style="margin: 2% 0 1% 0;">ПРИЙНЯТТЯ ЗАМОВЛЕННЯ</h3>
+            <p class="light">1. Після того, як Ви прийняли замовлення, відкриваються його ключові деталі. Вони корисні тим, що містять всю необхідну
+            інформацію про замовлення і клієнта: проміжні точки з адресами, якщо вони є, особливі побажання клієнта. Зручно і те,
+            що, у разі наявності, видно фотографію клієнта. Відповідно, у разі наявності фотографії, Вам легше розпізнати клієнта і
+            запросити його до салону автомобіля. Також звідси можна перейти на сторінку замовлення з картою, ознайомитися візуально
+            із поточним місцезнаходженням клієнта.</p>
+            <p class="light">2. Ви можете обрати один з двох способів побачити адреси на карті: за допомогою кнопки «Навігатор» або «Показати
+            маршрут». Давайте оглянемо ці кнопки – що вони з себе представляють? Вони є Вашим гідом по замовленню і ведуть вас від
+            Вашого місця розташування, до адреси подачі і далі по маршруту:</p>
+            <p class="light">a. Натискаючи кнопку «Навігатор» , Вам надається можливість вибрати те місце, до якого Ви бажаєте дістатися у даний
+            момент (якщо адрес кілька).</p>
+            <p class="light">b. Якщо Ви скористаєтеся кнопкою «Показати маршрут», відкриється звичайна карта, яка побудує маршрут від Вашого місця
+            розташування до місця розташування клієнта, а потім від точки посадки в точку призначення. У цьому ж вікні внизу Ви
+            побачите кнопку «Дії».</p>
+            <p class="light">3. Кнопка "Дії" містить корисні функції:</p>
+            <p class="light">«На місці» - оповістити клієнта про те, що Ви прибули за ним, в тому випадку якщо не спрацювало автоматичне сповіщення
+            за координатами.</p>
+            <p class="light">«Нагадати клієнту» - кнопка стає активною, в разі якщо пройшло більше 7 хвилин, з моменту сповіщення клієнта про Ваше
+            прибуття за адресою.</p>
+            <p class="light">«Зустрів» - натискаєте в обов'язковому порядку після того як клієнт сів у автомобіль.</p>
+            <p class="light">«Завершити» - натискаєте кнопку тільки по завершенню поїздки і коли клієнт з Вами розрахувався.</p>
+            <p class="light">"Відмовитися від замовлення" - кнопка активна 1 хвилину з моменту прийняття замовлення.</p>
+
+            <h3 class="cherry-colore" style="margin: 2% 0 1% 0;">КАБІНЕТ І НАЛАШТУВАННЯ</h3>
+            <p class="light">1. У цьому розділі відображається коротка інформація про Вас з можливістю перейти до режиму редагування профілю – для
+            цього натисніть на кнопку із зображенням "шестерні" на вашому фото. Тепер Ви можете редагувати свою анкету, змінювати
+            фотографію або інші поля аналогічно тому, як Ви це робили під час реєстрації. Як Ви помітили, екран згрупований по 4
+            ознаками аналогічно реєстраційним крокам. Щоб оновити кожен блок даних, виберіть відповідний розділ (категорію), внесіть
+            зміни і натисніть кнопку "оновити профіль".</p>
+            <p class="light">2. Для виходу з облікового запису необхідно перейти у режим редагування і натиснути на жовту іконку в правому верхньому
+            кутку екрану.</p>
+            <p class="light">3. У розділі «Замовлення» Ви можете виставити прийнятні фільтри за ціною замовлень, які Вам будуть приходити, за
+            радіусом їх пошуку, за кінцевим пунктом.</p>
+            <p class="light">4. У розділі «автозахвату» Ви вмикаєте або вимикаєте цю функцію, встановлюєте бажаний радіус.</p>
+            <p class="light">5. У розділі «Сповіщення» Ви можете обрати відповідні звуки на різні функції програми, вимкнути або увімкнути
+            вібросигнал.</p>
+            <p class="light">6. У розділі «Інтерфейс» є вкрай корисна функція нічного режиму для водіїв, які працюють у нічний час доби.</p>
+            <p class="light">7. У цьому ж розділі знаходиться кнопка «Вихід», що дозволяє зупинити використання програми та сповіщення про
+            замовлення. Для Вашої зручності кнопка пристрою «назад» повертає Вас на основний екран «Робота».</p>
+            <p class="light">Також, врахуйте, що кожне оновлення профілю відправляє заявку на модерацію Вашої анкети до служби підтримки <span class="cherry-colore regular">Cherry</span> Taxi.
+            Зміни набувають чинності, як і у випадку з реєстрацією, протягом 24 годин.</p>
+
+            <h3 class="cherry-colore" style="margin: 2% 0 1% 0;">КАБІНЕТ І НАЛАШТУВАННЯ</h3>
+            <p class="light">Якщо у Вас є питання стосовно використання Мобільного додатку <span class="cherry-colore regular">Cherry</span> Taxi, зв'яжіться з нами за адресою електронної пошти
+            – support@cherry-taxi.com.</p>
+            <p class="light">З повагою, команда <span class="cherry-colore regular">Cherry</span> Taxi.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-m ">
+            <div>
+                <div class="footer-logo">
+                    <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png"
+                            alt="Cherry" width="51px"></a>
+                </div>
+                <div class="google-play">
+                    <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client"><img
+                            src="img/Google-Play-Logo.png" alt="Google play" width="120px"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Контакти</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+                </div>
+                <hr class="footer">
+                <div class="footer-help">
+                    <p style="color: white;">
+                        Служба підтримки
+                        <br>
+                        <span class="cherry-colore"><img src="img/email.png" alt="email" width="15px">
+                            support@cherry-taxi.ua</span>
+                    </p>
+                    <p style="color: white;">
+                        Загальні питання
+                        <br>
+                        <span class="cherry-colore"><img src="img/email.png" alt="email" width="15px">
+                            info@cherry-taxi.ua</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

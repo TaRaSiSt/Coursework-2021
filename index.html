@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry taxi - служба замовлення таксі</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-ico">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<style>
+li {
+   list-style-type: none;
+    padding: 0.5%;
+}
+
+li::before {
+  color: #d94040;
+  content: "●";
+  padding-right: 10px;
+}
+</style>
+<body>
+   
+    <!-- Sidebar -->
+   
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="aboutus.html">Про нас</a>
+            <a href="customers.html">Клієнтам</a>
+            <a href="drivers.html">Водіям</a>
+            <a href="services.html">Послуги</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+   </aside>
+ 
+
+   <!-- Header   -->
+
+ <header>
+     <!-- Button sidebar -->
+      <div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+     <!-- Logo -->
+      <div class="space close700">
+          <a href="index.html"><img src="img/Logo.png" alt="Logo" class="logo"></a>
+      </div>
+      <!-- Choose a city  -->
+      <div class="nowrap">
+      <div class="popup row" id="popup-1">
+          <img src="img/location.png" alt="location" class="location-img">
+         <button onclick="togglePopup()" class="regular">Оберіть місто</button>
+             <div class="overlay"></div>
+             <div class="content-location">
+                 <div class="close-btn" onclick="togglePopup()">
+                     ×
+                 </div>
+                 <h1 class="regular">Оберіть місто</h1>
+                 <div class="ul-location ">
+                    <ul>
+                        <li class="li-location"><a href="dnipro.html" class="a-location cherry-colore">Дніпро</a></li>
+                        <li class="li-location"><a href="kyiv.html" class="a-location cherry-colore">Київ</a></li>
+                        <li class="li-location"><a href="odesa.html" class="a-location cherry-colore">Одеса</a></li>
+                    </ul><a href=""></a>
+                    <ul><a href=""></a>
+                        <li class="li-location"><a href="ivano-srank.html" class="a-location cherry-colore">Івано-Франківськ</a>
+                        </li>
+                        <li class="li-location"><a href="lviv.html" class="a-location cherry-colore">Львів</a></li>
+                        <li class="li-location"><a href="ternopil.html" class="a-location cherry-colore">Тернопіль</a></li>
+                    </ul>
+                 </div>
+             </div>
+      </div>
+    </div>
+  <!-- Phone -->
+    <div class="div-number">
+        <div>
+            <p class="bold p-number close1000">Замовити таксі</p>
+        </div>
+        <div class="div-number2">
+            <img src="img/smartphone.png" alt="Phone" width="40px">
+            <a href="tel:333" class="bold a hover-r_b"><span>333</span></a>
+        </div>
+    </div>
+  </header>
+  <hr>
+
+   <!-- Main content -->
+   
+   <div id="main">
+        <!-- Main baner -->
+        <div class="close1000">
+            <div class="splitview skewed">
+                <div class="panel top">
+                    <div class="content">
+                        <div class="description">
+                            <h1 class="bold">Набридли сірі будні?</h1>
+                            <p class="light">Тиснява у міському транспорті, постійні запізнення і ваші ноги вже просто не хочуть йти...</p>
+                        </div>
+                    
+                        <img src="img/original – gray.jpg" alt="Duotone">
+                    </div>
+                </div>
+                <div class="panel bottom">
+                    <div class="content">
+                        <div class="description">
+                            <h1>Вихід є!</h1>
+                            <p class="ligth">Таксі <span class="bold">Cherry</span> - це
+                                <br>
+                                швидко, комфортно, а головне ДЕШЕВО. Разом з нами ваша поїздка, набуде нових фарб!
+                            </p>
+                        </div>
+                    
+                        <img src="img/original.jpg" alt="Original">
+                    </div>
+                </div>
+
+                <div class="handle"></div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="main-content">
+            <div>
+                <h1 class="content-center">Замовити таксі в Україні</h1>
+            </div>
+            <div>
+                <h2 class="regular"><span class="cherry-colore">Cherry</span> Taxi</h2>
+            </div>
+            <div class="main-about-scroll" id="text-slide">
+                <h3 class="regular">Додаток таксі <span class="cherry-colore regular">Cherry</span>: ваш водій завжди онлайн</h3>
+                <p class="light">Сучасний темп життя все прискорюється. І разом з ним зобов'язані змінюватися і звичні нам сервіси.</p>
+                <p class="light">Забудьте про довгі спроби додзвонитись телефонному оператору тільки для того, щоб замовити таксі. І тим більше - марні
+                спроби пояснити, куди саме подати авто і млосно довгі хвилини очікування, коли ж водій все-таки добереться до вашого
+                будинку.</p>
+                <p class="light">Завдяки <span class="cherry-colore regular">Cherry</span> Taxi все це в минулому.</p>
+                <p class="light">Тепер за допомогою зручного додатку таксі водій знаходиться від вас буквально в парі торкань екрана. А завдяки сайту
+                <span class="cherry-colore regular">Cherry</span> Taxi - в парі кліків.</p>
+                <p class="light">І це не перебільшення: на таксі <span class="cherry-colore regular">Cherry</span> вже сьогодні працюють сотні професійних водіїв у всіх великих містах України. І
+                можете бути впевнені: замовивши авто, ви вже через кілька хвилин будете з комфортом мчати до місця призначення.</p>
+                <p class="light">При цьому замовити таксі онлайн настільки легко, що навіть повний "чайник" без зусиль зрозуміє, як це зробити. І так:
+                водій ніколи не стане перепитувати, куди саме йому під'їхати. Адже додаток відстежує ваше місцезнаходження з точністю до
+                метра (і навіть якщо ваш GPS барахлить, ви завжди можете уточнити, до якого дому під'їхати, просто тицьнувши в потрібне
+                місце на карті).</p>
+                <p class="light">Ну а ви, в свою чергу, оформивши замовлення, можете простежити, наскільки близько вже знаходиться водій, який прийняв
+                замовлення: його місце розташування відстежується в режимі реального часу.</p>
+                <p class="light">І, зрозуміло, не можна не рахуватися з найважливішими перевагами <span class="cherry-colore regular">Cherry</span> Taxi:</p>
+                <ul class="light">
+                    <li><span class="cherry-colore regular">Без диспетчера</span>: не потрібно витрачати час на дозвон. Чи не доводиться по кілька разів пояснювати, куди під'їхати. І,
+                    звичайно ж, ви платите тільки за послугу - і ні копійки за непотрібне посередництво.</li>
+                    <li><span class="cherry-colore regular">Ціна відома заздалегідь </span>: при оформленні замовлення ви знаєте точну вартість поїздки ще до його підтвердження. Ніяких
+                    накруток і неприємних "сюрпризів": це виключено!</li>
+                    <li><span class="cherry-colore regular">Улюблені місця - в один клік </span>: просто додайте свою роботу, дім або місця, де часто буваєте в "улюблені" - і робіть
+                    замовлення без жодного кліка по карті.</li>
+                </ul>
+                <h3 class="regular">Для клієнтів з особливими потребами</h3>
+                <p class="light">Те, що на сьогодні <span class="cherry-colore regular">Cherry</span> Taxi є одним з найдешевших сервісів в Україні, зовсім не означає, що ми економимо на якості.</p>
+                <p class="light">Навпаки: ми прагнемо до того, щоб кожен наш клієнт був максимально задоволений поїздкою. Саме тому в нашому автопарку є
+                машини на всі випадки життя. Потрібно викликати таксі економ-класу - чи хочете доїхати на представницькому авто?</p>
+                <p class="light">Бути може, вам необхідний мікроавтобус для великої і дружної компанії? А може, ви хочете перевезти великогабаритний
+                вантаж?</p>
+                <p class="light">З нами рішення будь-якої проблеми - справа одного дотику до екрана вашого смартфона. Просто виберіть, який саме таксі ви
+                хочете замовити - і вважайте, що ваш водій вже виїхав до вас.</p>
+                <p class="light">При цьому ви можете бути на всі 100% впевнені в тому, що замовлений автомобіль повністю відповідає вашим потребам.</p>
+                <p class="light">Ні, ми не про те, що замовляючи таксі, ви гарантовано отримуєте чистий салон і важливого професійного водія. Це - само
+                собою зрозумілий факт, і по-іншому з <span class="cherry-colore regular">Cherry</span> Taxi просто бути не може..</p>
+                <p class="light">Ми про те, що вам досить вказати, чи потрібно сидіння для дитини, салон для некурящих або інші важливі моменти - і ми
+                підберемо ідеально підходить для вас варіант.</p>
+                <p class="light">Як бачите, з <span class="cherry-colore regular">Cherry</span> Taxi не тільки дешево і швидко, але і по-справжньому зручно. Причому, у всіх сенсах: від простоти та
+                швидкості замовлення таксі онлайн до максимального комфорту, безпеки і якості обслуговування під час поїздки.</p>
+                <p class="light">Саме тому якщо вам потрібно таксі, яке не змусить себе чекати в будь-який час року і доби - вибирайте тільки найкраще.
+                Вибирайте <span class="cherry-colore regular">Cherry</span> Taxi!</p>
+            </div>
+        </div>
+   </div>
+
+   <!-- Footer -->
+   <footer>
+       <div class="footer-m ">
+            <div>
+                <div class="footer-logo">
+                        <a href="index.html"><span class="bold cherry-colore">Cherry</span><img src="img/cherry.png" alt="Cherry" width="51px"></a>
+                </div>
+                <div class="google-play">
+                        <a href="https://play.google.com/store/apps/details?id=com.shark.taxi.client"><img src="img/Google-Play-Logo.png" alt="Google play" width="120px"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="aboutus.html" class="hover-r_w footer-links-a">Про нас</a>
+                    <a href="customers.html" class="hover-r_w footer-links-a">Клієнтам</a>
+                    <a href="drivers.html" class="hover-r_w footer-links-a">Водіям</a>
+                    <a href="services.html" class="hover-r_w footer-links-a">Послуги</a>
+                    <a href="faq.html" class="hover-r_w footer-links-a">FAQ</a>
+                </div>
+                <hr class="footer">
+                 <div class="footer-help">
+                    <p style="color: white;">
+                        Служба підтримки
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w a">
+                            <img src="img/email.png" alt="email" width="15px"> support@cherry-taxi.ua
+                        </a>
+                    </p>
+                    <p style="color: white;">
+                        Загальні питання
+                        <br>
+                        <a href="mailto:support@cherry-taxi.ua" class="cherry-colore hover-r_w">
+                            <img src="img/email.png" alt="email" width="15px"> info@cherry-taxi.ua
+                        </a>
+                    </p>
+                </div>
+            </div>
+       </div>
+   </footer>
+</body>
+</html>
